@@ -35,60 +35,34 @@
             // 
             // lbClock
             // 
-            this.lbClock.AutoSize = true;
+            this.lbClock.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbClock.Font = new System.Drawing.Font("Tahoma", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbClock.Location = new System.Drawing.Point(60, 29);
+            this.lbClock.Location = new System.Drawing.Point(-1, 27);
             this.lbClock.Name = "lbClock";
-            this.lbClock.Size = new System.Drawing.Size(215, 58);
+            this.lbClock.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lbClock.Size = new System.Drawing.Size(341, 58);
             this.lbClock.TabIndex = 0;
-            this.lbClock.Text = "00:00:00";
+            this.lbClock.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // comboBox1
             // 
+            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "UTC (London)",
-            "UTC +1 (Zagreb)",
-            "UTC +2 (Athens)",
-            "UTC +3 (Moscow)",
-            "UTC +4 (Dubai)",
-            "UTC +5  (Karachi)",
-            "UTC +6 (Dhaka)",
-            "UTC +7 (Bangkok)",
-            "UTC +8 (Beijing)",
-            "UTC +9 (Tokyo)",
-            "UTC +10 (Sydney)",
-            "UTC +11 (Noumea)",
-            "UTC + 12 (Auckland)",
-            "UTC + 13 (Phoenix Islands)",
-            "UTC + 14 (Line Islands)",
-            "UTC -1 ",
-            "UTC -2 (South Georgia)",
-            "UTC -3 (Buenos Aires)",
-            "UTC -4 (Santo Domingo)",
-            "UTC -5 (New York)",
-            "UTC -6 (Chicago)",
-            "UTC -7 (Phoenix)",
-            "UTC -8 (Los Angeles)",
-            "UTC -9 (Anchorage)",
-            "UTC - 10 (Honolulu)",
-            "UTC - 11  (American Samoa)",
-            "UTC - 12 (Howland Island)"});
-            this.comboBox1.Location = new System.Drawing.Point(70, 152);
+            this.comboBox1.Location = new System.Drawing.Point(77, 195);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(191, 21);
+            this.comboBox1.Size = new System.Drawing.Size(188, 21);
             this.comboBox1.TabIndex = 1;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // lbDate
             // 
-            this.lbDate.AutoSize = true;
-            this.lbDate.Location = new System.Drawing.Point(131, 119);
+            this.lbDate.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbDate.Location = new System.Drawing.Point(77, 144);
             this.lbDate.Name = "lbDate";
-            this.lbDate.Size = new System.Drawing.Size(73, 13);
+            this.lbDate.Size = new System.Drawing.Size(188, 13);
             this.lbDate.TabIndex = 2;
-            this.lbDate.Text = "00 . 00 . 0000";
+            this.lbDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
@@ -98,11 +72,11 @@
             this.Controls.Add(this.lbDate);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.lbClock);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.Text = "Clock";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
